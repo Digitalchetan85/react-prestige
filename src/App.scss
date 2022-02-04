@@ -1,0 +1,57 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #0d6efd,
+  "secondary": #6c757d,
+  "dark": #343a40,
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: #000;
+$secondary-color: #b48c35;
+$ternary-color: #000;
+$background: #0000001a;
+$white-color: #fff;
+
+#Menubar {
+  .nav-link {
+    color: $secondary-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-right: 1px solid $secondary-color;
+    padding: 0px 20px;
+    &:last-child {
+      border-right: 0px;
+    }
+    &:hover {
+      color: $ternary-color;
+    }
+  }
+  .nav-item {
+    border-right: 1px solid $secondary-color;
+  }
+  .menu-area {
+    position: static;
+  }
+  .mega-area {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    right: 0;
+    padding: 15px;
+  }
+  .dropdown-menu {
+    left: 10%;
+  }
+  .col-md-3 {
+    width: 20%;
+  }
+}
